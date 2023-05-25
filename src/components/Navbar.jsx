@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <header className="text-gray-400 bg-gray-900 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+    <header className="body-font bg-gray-900 text-gray-400">
+      <div className="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
+        <a className="title-font mb-4 flex items-center font-medium text-white md:mb-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -12,14 +12,14 @@ export const Navbar = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            className="h-10 w-10 rounded-full bg-indigo-500 p-2 text-white"
             viewBox="0 0 24 24"
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
           <span className="ml-3 text-xl">SnippetHub</span>
         </a>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+        <nav className="flex flex-wrap items-center justify-center text-base md:ml-4	md:mr-auto md:border-l md:border-gray-700 md:py-1 md:pl-4">
           <Link className="mr-5 hover:text-white" to="/">
             Home
           </Link>
@@ -37,7 +37,7 @@ export const Navbar = () => {
           </a>
         </nav>
         <Link to={"/Login"}>
-          <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+          <button className="mt-4 inline-flex items-center rounded border-0 bg-gray-800 px-3 py-1 text-base hover:bg-gray-700 focus:outline-none md:mt-0">
             LogIn/SignIn
             <svg
               fill="none"
@@ -45,7 +45,7 @@ export const Navbar = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              className="w-4 h-4 ml-1"
+              className="ml-1 h-4 w-4"
               viewBox="0 0 24 24"
             >
               <path d="M5 12h14M12 5l7 7-7 7"></path>
