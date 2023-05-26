@@ -1,4 +1,20 @@
+import { useState } from "react";
+import { auth } from "../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
 export const LogIn = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const signIn = async () => {
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+    } catch {
+      console.error("error");
+    }
+  };
+  // console.log(auth?.currentUser?.email);
+
   return (
     <div>
       <div className="h-px w-auto bg-slate-500"></div>
@@ -27,6 +43,7 @@ export const LogIn = () => {
                     id="email"
                     name="email"
                     className="w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
               </div>
@@ -43,16 +60,22 @@ export const LogIn = () => {
                     id="password"
                     name="password"
                     className="w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
               </div>
-              <div className="mt-4 w-full p-2">
-                <button className="mx-auto flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+              <div className="mt-10 w-full p-2">
+                <button
+                  className="mx-auto flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none"
+                  onClick={signIn}
+                >
                   LogIn
                 </button>
               </div>
-              <div className="mx-auto mt-10 font-extrabold text-white">
-                <button className="border-spacing-2">Login with Google</button>
+              <div className="mx-auto mt-32 font-extrabold text-white">
+                <div className="border-spacing-2 text-indigo-400">
+                  Login to get access to our monthly newsletter.
+                </div>
               </div>
               <div className="mt-12 w-full border-t border-gray-800 p-2 pt-8 text-center">
                 <p>Contact us on:</p>
