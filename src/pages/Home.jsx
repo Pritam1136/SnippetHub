@@ -75,6 +75,8 @@ export const Home = () => {
       <p className="mt-32 p-3 px-4 pb-4 text-center font-semibold text-white">
         Join our ever-growing community of passonate developers today and
         experience the power of SnippetHub.
+        <br />
+        Made by Pritam Roy.
       </p>
     </section>
   );

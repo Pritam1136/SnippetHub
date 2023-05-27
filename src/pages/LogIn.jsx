@@ -9,8 +9,10 @@ export const LogIn = () => {
   const signIn = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-    } catch {
-      console.error("error");
+      window.location.href = "/";
+    } catch (err) {
+      window.location.href = "/";
+      console.error("Error on login");
     }
   };
   // console.log(auth?.currentUser?.email);
@@ -24,9 +26,14 @@ export const LogIn = () => {
             <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
               LogIn
             </h1>
-            <p className="mx-auto text-base leading-relaxed lg:w-2/3">
+            <div className="mx-auto text-base leading-relaxed lg:w-2/3">
               LogIn with email and password.
-            </p>
+              <br />
+              <p className="font-sans font-semibold text-indigo-400">
+                If you are logIn for first time then please wait until you get
+                redirected to home page.
+              </p>
+            </div>
           </div>
           <div className="mx-auto md:w-2/3 lg:w-1/2">
             <div className="-m-2 flex flex-wrap">
@@ -72,12 +79,12 @@ export const LogIn = () => {
                   LogIn
                 </button>
               </div>
-              <div className="mx-auto mt-32 font-extrabold text-white">
-                <div className="border-spacing-2 text-indigo-400">
+              <div className="mx-auto mt-32 font-extrabold">
+                <div className="border-spacing-2 font-mono text-indigo-400">
                   Login to get access to our monthly newsletter.
                 </div>
               </div>
-              <div className="mt-12 w-full border-t border-gray-800 p-2 pt-8 text-center">
+              <div className="mt-20 w-full border-t border-gray-800 p-2 pt-8 text-center">
                 <p>Contact us on:</p>
                 <a className="text-indigo-400">snippethub01@email.com</a>
                 <div className="my-5 mt-5 leading-normal">
