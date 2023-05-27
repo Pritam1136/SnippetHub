@@ -9,6 +9,8 @@ import { Cards } from "./modules/modulesComponent/Cards";
 import { Headers } from "./modules/modulesComponent/Headers";
 import { Footers } from "./modules/modulesComponent/Footers";
 import { LogIn } from "./pages/LogIn";
+import { Testimonials } from "./modules/modulesComponent/Testimonials";
+import { Contents } from "./modules/modulesComponent/Content";
 function App() {
   return (
     <div>
@@ -23,6 +25,8 @@ function App() {
           <Route path="/modules/cards" element={<Cards />} />
           <Route path="/modules/headers" element={<Headers />} />
           <Route path="/modules/footers" element={<Footers />} />
+          <Route path="modules/testimonials" element={<Testimonials />} />
+          <Route path="modules/content" element={<Contents />} />
         </Routes>
       </Router>
     </div>
