@@ -9,10 +9,10 @@ export const ModulesNav = () => {
       </h1>
       <div className="mt-8 space-y-4">
         <div className="flex justify-center align-middle">
-          <div>
+          <div className="space-x-4">
             <Link
               to={"/modules/buttons"}
-              className=" inline-flex items-center rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+              className="inline-flex items-center rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
             >
               Buttons
             </Link>
@@ -25,7 +25,7 @@ export const ModulesNav = () => {
           </div>
         </div>
         <div className="flex justify-center align-middle">
-          <div>
+          <div className="space-x-4">
             <Link
               to={"/modules/headers"}
               className="inline-flex items-center rounded-md bg-yellow-500 px-4 py-2 text-white hover:bg-yellow-600"
@@ -41,7 +41,7 @@ export const ModulesNav = () => {
           </div>
         </div>
         <div className="flex justify-center align-middle">
-          <div>
+          <div className="space-x-4">
             <Link
               to={"/modules/testimonials"}
               className="inline-flex items-center rounded-md bg-yellow-500 px-4 py-2 text-white hover:bg-yellow-600"
