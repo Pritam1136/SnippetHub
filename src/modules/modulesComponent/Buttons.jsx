@@ -39,9 +39,18 @@ export const Buttons = () => {
   };
 
   const handleCopy3 = () => {
-    const codeToCopy = `<button
-    className="inline-flex items-center rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4  py-2 font-bold text-white transition-transform duration-300 hover:scale-105" >
-    Button
+    const codeToCopy = `<button>
+    <a
+      href="#_"
+      class="group relative inline-flex items-center justify-center rounded-md bg-gray-800 px-4 py-2 text-lg font-medium tracking-tighter text-white"
+    >
+      <span class="absolute inset-0 ml-1 mt-1 h-full w-full rounded-md bg-purple-600 transition-all duration-300 ease-in-out group-hover:ml-0 group-hover:mt-0"></span>
+      <span class="absolute inset-0 h-full w-full rounded-md bg-white "></span>
+      <span class="absolute inset-0 h-full w-full rounded-md bg-purple-600 opacity-0 transition-all delay-100 duration-200 ease-in-out group-hover:opacity-100 "></span>
+      <span class="relative text-purple-600 transition-colors delay-100 duration-200 ease-in-out group-hover:text-white">
+        Button
+      </span>
+    </a>
   </button>`;
     navigator.clipboard.writeText(codeToCopy);
     setCopied3(true);
@@ -66,7 +75,7 @@ export const Buttons = () => {
 
   const handleCopy5 = () => {
     const codeToCopy = `<button
-    className="inline-flex items-center rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4  py-2 font-bold text-white transition-transform duration-300 hover:scale-105" >
+    className="rounded-full border border-blue-400 bg-transparent from-blue-500 to-purple-500 px-2 py-4 font-mono font-bold text-white hover:bg-gradient-to-b">
     Button
   </button>`;
     navigator.clipboard.writeText(codeToCopy);
@@ -77,9 +86,10 @@ export const Buttons = () => {
   };
 
   const handleCopy6 = () => {
-    const codeToCopy = `<button
-    className="inline-flex items-center rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4  py-2 font-bold text-white transition-transform duration-300 hover:scale-105" >
-    Button
+    const codeToCopy = ` <button
+    className="rounded border border-gray-400  px-4 py-2 font-semibold text-white shadow hover:bg-gray-100 hover:text-black"
+  >
+  Button
   </button>`;
     navigator.clipboard.writeText(codeToCopy);
     setCopied6(true);
@@ -89,9 +99,10 @@ export const Buttons = () => {
   };
 
   const handleCopy7 = () => {
-    const codeToCopy = `<button
-    className="inline-flex items-center rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4  py-2 font-bold text-white transition-transform duration-300 hover:scale-105" >
-    Button
+    const codeToCopy = ` <button
+    className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-green-400 to-blue-600 px-5  py-2  text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white"
+  >
+  Button
   </button>`;
     navigator.clipboard.writeText(codeToCopy);
     setCopied7(true);
@@ -101,9 +112,16 @@ export const Buttons = () => {
   };
 
   const handleCopy8 = () => {
-    const codeToCopy = `<button
-    className="inline-flex items-center rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4  py-2 font-bold text-white transition-transform duration-300 hover:scale-105" >
-    Button
+    const codeToCopy = ` <button>
+    <a
+      href="#_"
+      class="group relative inline-flex items-center justify-start overflow-hidden rounded bg-white px-6 py-3 font-medium transition-all hover:bg-white"
+    >
+      <span class="absolute bottom-0 left-0 mb-9 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded bg-slate-700 transition-all duration-500 ease-out group-hover:mb-32 group-hover:ml-0 group-hover:translate-x-0"></span>
+      <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+        Button
+      </span>
+    </a>
   </button>`;
     navigator.clipboard.writeText(codeToCopy);
     setCopied8(true);
@@ -113,9 +131,16 @@ export const Buttons = () => {
   };
 
   const handleCopy9 = () => {
-    const codeToCopy = `<button
-    className="inline-flex items-center rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4  py-2 font-bold text-white transition-transform duration-300 hover:scale-105" >
-    Button
+    const codeToCopy = `<button>
+    <a
+      href="#_"
+      class="group relative inline-flex items-center justify-start overflow-hidden rounded-full bg-blue-600 px-5 py-3 font-medium transition-all hover:bg-white"
+    >
+      <span class="absolute inset-0 rounded-full border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"></span>
+      <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+       Button
+      </span>
+    </a>
   </button>`;
     navigator.clipboard.writeText(codeToCopy);
     setCopied9(true);
@@ -125,9 +150,15 @@ export const Buttons = () => {
   };
 
   const handleCopy10 = () => {
-    const codeToCopy = `<button
-    className="inline-flex items-center rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4  py-2 font-bold text-white transition-transform duration-300 hover:scale-105" >
-    Button
+    const codeToCopy = `<button>
+    <a
+      href="#_"
+      class="group relative rounded-lg px-6 py-3 font-bold text-white"
+    >
+      <span class="ease absolute inset-0 h-full w-full -translate-x-1 -translate-y-1 transform bg-purple-800 opacity-80 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span class="ease absolute inset-0 h-full w-full translate-x-1 translate-y-1 transform bg-pink-800 opacity-80 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span class="relative">Button</span>
+    </a>
   </button>`;
     navigator.clipboard.writeText(codeToCopy);
     setCopied10(true);
@@ -158,13 +189,21 @@ export const Buttons = () => {
         </button>
       </div>
       <div className="pt-8">
-        <button
-          className="inline-flex items-center rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4  py-2 font-bold text-white transition-transform duration-300 hover:scale-105"
-          onClick={handleCopy3}
-        >
-          {copied3 ? "Copied!" : "Copy Code"}
+        <button onClick={handleCopy3}>
+          <a
+            href="#_"
+            class="group relative inline-flex items-center justify-center rounded-md bg-gray-800 px-4 py-2 text-lg font-medium tracking-tighter text-white"
+          >
+            <span class="absolute inset-0 ml-1 mt-1 h-full w-full rounded-md bg-purple-600 transition-all duration-300 ease-in-out group-hover:ml-0 group-hover:mt-0"></span>
+            <span class="absolute inset-0 h-full w-full rounded-md bg-white "></span>
+            <span class="absolute inset-0 h-full w-full rounded-md bg-purple-600 opacity-0 transition-all delay-100 duration-200 ease-in-out group-hover:opacity-100 "></span>
+            <span class="relative text-purple-600 transition-colors delay-100 duration-200 ease-in-out group-hover:text-white">
+              {copied3 ? "Copied!" : "Copy Code"}
+            </span>
+          </a>
         </button>
       </div>
+
       <div className="pt-8">
         <button
           className="rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-2 py-4 font-bold text-white transition-all duration-300 hover:scale-110 hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500"
@@ -191,34 +230,48 @@ export const Buttons = () => {
       </div>
       <div className="pt-8">
         <button
-          className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-green-400 to-blue-600 px-5  py-2  text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white"
+          className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-green-400 to-blue-600 px-6  py-3  text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white"
           onClick={handleCopy7}
         >
           {copied7 ? "Copied!" : "Copy Code"}
         </button>
       </div>
       <div className="pt-8">
-        <button
-          className="inline-flex items-center rounded-md bg-yellow-500 px-4 py-2 font-bold text-white transition-transform duration-300 hover:scale-105"
-          onClick={handleCopy8}
-        >
-          {copied8 ? "Copied!" : "Copy Code"}
+        <button onClick={handleCopy8}>
+          <a
+            href="#_"
+            class="group relative inline-flex items-center justify-start overflow-hidden rounded bg-white px-6 py-3 font-medium transition-all hover:bg-white"
+          >
+            <span class="absolute bottom-0 left-0 mb-9 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded bg-slate-700 transition-all duration-500 ease-out group-hover:mb-32 group-hover:ml-0 group-hover:translate-x-0"></span>
+            <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+              {copied8 ? "Copied!" : "Copy Code"}
+            </span>
+          </a>
         </button>
       </div>
       <div className="pt-8">
-        <button
-          className="inline-flex items-center rounded-md bg-yellow-500 px-4 py-2 font-bold text-white transition-transform duration-300 hover:scale-105"
-          onClick={handleCopy9}
-        >
-          {copied9 ? "Copied!" : "Copy Code"}
+        <button onClick={handleCopy9}>
+          <a
+            href="#_"
+            class="group relative inline-flex items-center justify-start overflow-hidden rounded-full bg-blue-600 px-5 py-3 font-medium transition-all hover:bg-white"
+          >
+            <span class="absolute inset-0 rounded-full border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"></span>
+            <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+              {copied9 ? "Copied!" : "Copy Code"}
+            </span>
+          </a>
         </button>
       </div>
-      <div className="pb-4 pt-8">
-        <button
-          className="inline-flex items-center rounded-md bg-yellow-500 px-4 py-2 font-bold text-white transition-transform duration-300 hover:scale-105"
-          onClick={handleCopy10}
-        >
-          {copied10 ? "Copied!" : "Copy Code"}
+      <div className="pb-8 pt-8">
+        <button onClick={handleCopy10}>
+          <a
+            href="#_"
+            class="group relative rounded-lg px-6 py-3 font-bold text-white"
+          >
+            <span class="ease absolute inset-0 h-full w-full -translate-x-1 -translate-y-1 transform bg-purple-800 opacity-80 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+            <span class="ease absolute inset-0 h-full w-full translate-x-1 translate-y-1 transform bg-pink-800 opacity-80 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+            <span class="relative">{copied10 ? "Copied!" : "Copy Code"}</span>
+          </a>
         </button>
       </div>
     </div>
