@@ -42,12 +42,12 @@ export const Buttons = () => {
     const codeToCopy = `<button>
     <a
       href="#_"
-      class="group relative inline-flex items-center justify-center rounded-md bg-gray-800 px-4 py-2 text-lg font-medium tracking-tighter text-white"
+      className="group relative inline-flex items-center justify-center rounded-md bg-gray-800 px-4 py-2 text-lg font-medium tracking-tighter text-white"
     >
-      <span class="absolute inset-0 ml-1 mt-1 h-full w-full rounded-md bg-purple-600 transition-all duration-300 ease-in-out group-hover:ml-0 group-hover:mt-0"></span>
-      <span class="absolute inset-0 h-full w-full rounded-md bg-white "></span>
-      <span class="absolute inset-0 h-full w-full rounded-md bg-purple-600 opacity-0 transition-all delay-100 duration-200 ease-in-out group-hover:opacity-100 "></span>
-      <span class="relative text-purple-600 transition-colors delay-100 duration-200 ease-in-out group-hover:text-white">
+      <span className="absolute inset-0 ml-1 mt-1 h-full w-full rounded-md bg-purple-600 transition-all duration-300 ease-in-out group-hover:ml-0 group-hover:mt-0"></span>
+      <span className="absolute inset-0 h-full w-full rounded-md bg-white "></span>
+      <span className="absolute inset-0 h-full w-full rounded-md bg-purple-600 opacity-0 transition-all delay-100 duration-200 ease-in-out group-hover:opacity-100 "></span>
+      <span className="relative text-purple-600 transition-colors delay-100 duration-200 ease-in-out group-hover:text-white">
         Button
       </span>
     </a>
@@ -115,10 +115,10 @@ export const Buttons = () => {
     const codeToCopy = ` <button>
     <a
       href="#_"
-      class="group relative inline-flex items-center justify-start overflow-hidden rounded bg-white px-6 py-3 font-medium transition-all hover:bg-white"
+      className="group relative inline-flex items-center justify-start overflow-hidden rounded bg-white px-6 py-3 font-medium transition-all hover:bg-white"
     >
-      <span class="absolute bottom-0 left-0 mb-9 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded bg-slate-700 transition-all duration-500 ease-out group-hover:mb-32 group-hover:ml-0 group-hover:translate-x-0"></span>
-      <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+      <span className="absolute bottom-0 left-0 mb-9 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded bg-slate-700 transition-all duration-500 ease-out group-hover:mb-32 group-hover:ml-0 group-hover:translate-x-0"></span>
+      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
         Button
       </span>
     </a>
@@ -134,10 +134,10 @@ export const Buttons = () => {
     const codeToCopy = `<button>
     <a
       href="#_"
-      class="group relative inline-flex items-center justify-start overflow-hidden rounded-full bg-blue-600 px-5 py-3 font-medium transition-all hover:bg-white"
+      className="group relative inline-flex items-center justify-start overflow-hidden rounded-full bg-blue-600 px-5 py-3 font-medium transition-all hover:bg-white"
     >
-      <span class="absolute inset-0 rounded-full border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"></span>
-      <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+      <span className="absolute inset-0 rounded-full border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"></span>
+      <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
        Button
       </span>
     </a>
@@ -153,11 +153,11 @@ export const Buttons = () => {
     const codeToCopy = `<button>
     <a
       href="#_"
-      class="group relative rounded-lg px-6 py-3 font-bold text-white"
+      className="group relative rounded-lg px-6 py-3 font-bold text-white"
     >
-      <span class="ease absolute inset-0 h-full w-full -translate-x-1 -translate-y-1 transform bg-purple-800 opacity-80 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-      <span class="ease absolute inset-0 h-full w-full translate-x-1 translate-y-1 transform bg-pink-800 opacity-80 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-      <span class="relative">Button</span>
+      <span className="ease absolute inset-0 h-full w-full -translate-x-1 -translate-y-1 transform bg-purple-800 opacity-80 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span className="ease absolute inset-0 h-full w-full translate-x-1 translate-y-1 transform bg-pink-800 opacity-80 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span className="relative">Button</span>
     </a>
   </button>`;
     navigator.clipboard.writeText(codeToCopy);
@@ -192,12 +192,12 @@ export const Buttons = () => {
         <button onClick={handleCopy3}>
           <a
             href="#_"
-            class="group relative inline-flex items-center justify-center rounded-md bg-gray-800 px-4 py-2 text-lg font-medium tracking-tighter text-white"
+            className="group relative inline-flex items-center justify-center rounded-md bg-gray-800 px-4 py-2 text-lg font-medium tracking-tighter text-white"
           >
-            <span class="absolute inset-0 ml-1 mt-1 h-full w-full rounded-md bg-purple-600 transition-all duration-300 ease-in-out group-hover:ml-0 group-hover:mt-0"></span>
-            <span class="absolute inset-0 h-full w-full rounded-md bg-white "></span>
-            <span class="absolute inset-0 h-full w-full rounded-md bg-purple-600 opacity-0 transition-all delay-100 duration-200 ease-in-out group-hover:opacity-100 "></span>
-            <span class="relative text-purple-600 transition-colors delay-100 duration-200 ease-in-out group-hover:text-white">
+            <span className="absolute inset-0 ml-1 mt-1 h-full w-full rounded-md bg-purple-600 transition-all duration-300 ease-in-out group-hover:ml-0 group-hover:mt-0"></span>
+            <span className="absolute inset-0 h-full w-full rounded-md bg-white "></span>
+            <span className="absolute inset-0 h-full w-full rounded-md bg-purple-600 opacity-0 transition-all delay-100 duration-200 ease-in-out group-hover:opacity-100 "></span>
+            <span className="relative text-purple-600 transition-colors delay-100 duration-200 ease-in-out group-hover:text-white">
               {copied3 ? "Copied!" : "Copy Code"}
             </span>
           </a>
@@ -240,10 +240,10 @@ export const Buttons = () => {
         <button onClick={handleCopy8}>
           <a
             href="#_"
-            class="group relative inline-flex items-center justify-start overflow-hidden rounded bg-white px-6 py-3 font-medium transition-all hover:bg-white"
+            className="group relative inline-flex items-center justify-start overflow-hidden rounded bg-white px-6 py-3 font-medium transition-all hover:bg-white"
           >
-            <span class="absolute bottom-0 left-0 mb-9 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded bg-slate-700 transition-all duration-500 ease-out group-hover:mb-32 group-hover:ml-0 group-hover:translate-x-0"></span>
-            <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+            <span className="absolute bottom-0 left-0 mb-9 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded bg-slate-700 transition-all duration-500 ease-out group-hover:mb-32 group-hover:ml-0 group-hover:translate-x-0"></span>
+            <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
               {copied8 ? "Copied!" : "Copy Code"}
             </span>
           </a>
@@ -253,10 +253,10 @@ export const Buttons = () => {
         <button onClick={handleCopy9}>
           <a
             href="#_"
-            class="group relative inline-flex items-center justify-start overflow-hidden rounded-full bg-blue-600 px-5 py-3 font-medium transition-all hover:bg-white"
+            className="group relative inline-flex items-center justify-start overflow-hidden rounded-full bg-blue-600 px-5 py-3 font-medium transition-all hover:bg-white"
           >
-            <span class="absolute inset-0 rounded-full border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"></span>
-            <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
+            <span className="absolute inset-0 rounded-full border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"></span>
+            <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
               {copied9 ? "Copied!" : "Copy Code"}
             </span>
           </a>
@@ -266,11 +266,13 @@ export const Buttons = () => {
         <button onClick={handleCopy10}>
           <a
             href="#_"
-            class="group relative rounded-lg px-6 py-3 font-bold text-white"
+            className="group relative rounded-lg px-6 py-3 font-bold text-white"
           >
-            <span class="ease absolute inset-0 h-full w-full -translate-x-1 -translate-y-1 transform bg-purple-800 opacity-80 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-            <span class="ease absolute inset-0 h-full w-full translate-x-1 translate-y-1 transform bg-pink-800 opacity-80 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-            <span class="relative">{copied10 ? "Copied!" : "Copy Code"}</span>
+            <span className="ease absolute inset-0 h-full w-full -translate-x-1 -translate-y-1 transform bg-purple-800 opacity-80 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+            <span className="ease absolute inset-0 h-full w-full translate-x-1 translate-y-1 transform bg-pink-800 opacity-80 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+            <span className="relative">
+              {copied10 ? "Copied!" : "Copy Code"}
+            </span>
           </a>
         </button>
       </div>
