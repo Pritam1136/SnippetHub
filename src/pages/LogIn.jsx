@@ -11,8 +11,8 @@ export const LogIn = () => {
       await createUserWithEmailAndPassword(auth, email, password);
       window.location.href = "/";
     } catch (err) {
+      console.log("Error on login");
       window.location.href = "/";
-      console.error("Error on login");
     }
   };
   // console.log(auth?.currentUser?.email);
